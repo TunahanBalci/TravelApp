@@ -22,8 +22,8 @@ namespace TravelApp.Models.Entities
         [MaxLength(100)]
         public string Location { get; set; }
 
-        [Required]
-        public Guid User_ID { get; set; }
+        //[Required]
+        //public Guid User_ID { get; set; }
 
         public ICollection<Review> Reviews { get; set; } = new List<Review>();
 
@@ -32,6 +32,8 @@ namespace TravelApp.Models.Entities
         public ICollection<Activity> Activities { get; set; } = new List<Activity>();
 
         public ICollection<string> Attractions { get; set; } = new List<string>();
+
+        public string Image_Path { get; set; }
 
 
         public double Average_Rating

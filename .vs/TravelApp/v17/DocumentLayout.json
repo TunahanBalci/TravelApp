@@ -3,16 +3,108 @@
   "WorkspaceRootPath": "C:\\Users\\tunah\\source\\TravelApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241220190803_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241220190803_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\createdestination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\createdestination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\createreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\createreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241221005341_Remove_UserID_From_Destination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241221005341_Remove_UserID_From_Destination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\destination\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\destination\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\models\\entities\\destination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:models\\entities\\destination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\models\\entities\\accommodation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:models\\entities\\accommodation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\createaccommodation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\createaccommodation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\listaccommodations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\listaccommodations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\controllers\\adminpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:controllers\\adminpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\controllers\\destinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:controllers\\destinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\createcity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\createcity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\createactivity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\createactivity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\listcities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\listcities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\listactivities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\listactivities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241220190718_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241220190718_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\listdestinations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\listdestinations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241221002351_ImagePath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241221002351_ImagePath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\listreviews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\listreviews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\adminpanel\\listusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\adminpanel\\listusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\models\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:models\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +115,24 @@
       "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:models\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\models\\entities\\accommodation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:models\\entities\\accommodation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\models\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:models\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\models\\entities\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:models\\entities\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\models\\entities\\destination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:models\\entities\\destination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\migrations\\20241220190803_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:migrations\\20241220190803_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241220190718_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241220190718_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\models\\entities\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|solutionrelative:models\\entities\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50CC3866-B1C3-478C-86BE-74E0C1502142}|TravelApp.csproj|c:\\users\\tunah\\source\\travelapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,63 +154,258 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241220190803_test.cs",
-              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241220190803_test.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241220190803_test.cs",
-              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241220190803_test.cs",
-              "RelativeToolTip": "Migrations\\20241220190803_test.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T19:08:03.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20241220190718_test.cs",
-              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241220190718_test.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241220190718_test.cs",
-              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241220190718_test.cs",
-              "RelativeToolTip": "Migrations\\20241220190718_test.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20241221005341_Remove_UserID_From_Destination.cs",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241221005341_Remove_UserID_From_Destination.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241221005341_Remove_UserID_From_Destination.cs",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241221005341_Remove_UserID_From_Destination.cs",
+              "RelativeToolTip": "Migrations\\20241221005341_Remove_UserID_From_Destination.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T19:07:19.026Z",
+              "WhenOpened": "2024-12-21T00:53:41.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T19:00:39.903Z",
+              "DocumentIndex": 6,
+              "Title": "CreateAccommodation.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateAccommodation.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\CreateAccommodation.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateAccommodation.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\CreateAccommodation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T22:37:59.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-20T18:59:15.476Z",
+              "Title": "AdminPanelController.cs",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Controllers\\AdminPanelController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminPanelController.cs",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Controllers\\AdminPanelController.cs",
+              "RelativeToolTip": "Controllers\\AdminPanelController.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAAAOsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T22:01:52.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateDestination.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateDestination.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\CreateDestination.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateDestination.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\CreateDestination.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T22:50:05.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\List.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\List.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\List.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\List.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T22:05:27.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListAccommodations.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListAccommodations.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\ListAccommodations.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListAccommodations.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\ListAccommodations.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T00:17:49.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Destination.cs",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\Destination.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Destination.cs",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\Destination.cs",
+              "RelativeToolTip": "Models\\Entities\\Destination.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowB0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T18:10:29.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Accommodation.cs",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\Accommodation.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Accommodation.cs",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\Accommodation.cs",
+              "RelativeToolTip": "Models\\Entities\\Accommodation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T18:10:15.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CreateReview.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateReview.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\CreateReview.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateReview.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\CreateReview.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T22:38:20.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DestinationController.cs",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Controllers\\DestinationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DestinationController.cs",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Controllers\\DestinationController.cs",
+              "RelativeToolTip": "Controllers\\DestinationController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T19:17:03.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\Destination\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Destination\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\Destination\\Index.cshtml",
+              "RelativeToolTip": "Views\\Destination\\Index.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T21:28:51.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\CreateUser.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateUser.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\CreateUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T22:49:39.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateCity.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateCity.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\CreateCity.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateCity.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\CreateCity.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T22:37:35.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateActivity.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateActivity.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\CreateActivity.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\CreateActivity.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\CreateActivity.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T22:39:08.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T21:52:56.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ListCities.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListCities.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\ListCities.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListCities.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\ListCities.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T00:16:07.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ListActivities.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListActivities.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\ListActivities.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListActivities.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\ListActivities.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T00:15:58.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\Index.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T00:02:59.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\Create.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\Create.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T22:02:27.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Data\\AppDBContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDBContext.cs",
@@ -127,20 +418,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "City.cs",
-              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\City.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\City.cs",
-              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\City.cs",
-              "RelativeToolTip": "Models\\Entities\\City.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T18:10:48.408Z",
+              "DocumentIndex": 20,
+              "Title": "ListDestinations.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListDestinations.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\ListDestinations.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListDestinations.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\ListDestinations.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T00:15:42.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
+              "Title": "20241221002351_ImagePath.cs",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241221002351_ImagePath.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241221002351_ImagePath.cs",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241221002351_ImagePath.cs",
+              "RelativeToolTip": "Migrations\\20241221002351_ImagePath.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T00:23:51.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ListReviews.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListReviews.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\ListReviews.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListReviews.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\ListReviews.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T00:15:08.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ListUsers.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListUsers.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminPanel\\ListUsers.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\AdminPanel\\ListUsers.cshtml",
+              "RelativeToolTip": "Views\\AdminPanel\\ListUsers.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T00:18:32.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T21:30:22.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "Review.cs",
               "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\Review.cs",
               "RelativeDocumentMoniker": "Models\\Entities\\Review.cs",
@@ -153,33 +496,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 26,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Models\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\User.cs",
               "RelativeToolTip": "Models\\Entities\\User.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAjwDAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAhwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T18:10:32.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Destination.cs",
-              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\Destination.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Destination.cs",
-              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\Destination.cs",
-              "RelativeToolTip": "Models\\Entities\\Destination.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBsAAABHAAAAAAAAAA==",
+              "DocumentIndex": 27,
+              "Title": "City.cs",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\City.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\City.cs",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\City.cs",
+              "RelativeToolTip": "Models\\Entities\\City.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T18:10:29.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T18:10:48.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 28,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T22:02:58.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T21:32:25.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-20T18:59:15.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "Activity.cs",
               "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\Activity.cs",
               "RelativeDocumentMoniker": "Models\\Entities\\Activity.cs",
@@ -187,25 +565,47 @@
               "RelativeToolTip": "Models\\Entities\\Activity.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAcwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T18:10:23.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T18:10:23.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Accommodation.cs",
-              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\Accommodation.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Accommodation.cs",
-              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Models\\Entities\\Accommodation.cs",
-              "RelativeToolTip": "Models\\Entities\\Accommodation.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAgwB8AAAAoAAAAAAAAAA==",
+              "DocumentIndex": 33,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T18:10:15.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T19:00:39.903Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 31,
+              "Title": "20241220190803_test.cs",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241220190803_test.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241220190803_test.cs",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241220190803_test.cs",
+              "RelativeToolTip": "Migrations\\20241220190803_test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T19:08:03.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20241220190718_test.cs",
+              "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241220190718_test.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241220190718_test.cs",
+              "ToolTip": "C:\\Users\\tunah\\source\\TravelApp\\Migrations\\20241220190718_test.cs",
+              "RelativeToolTip": "Migrations\\20241220190718_test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T19:07:19.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tunah\\source\\TravelApp\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -213,8 +613,7 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T18:10:01.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T18:10:01.687Z"
             }
           ]
         }

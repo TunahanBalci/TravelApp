@@ -1,0 +1,22 @@
+﻿@model IEnumerable<TravelApp.Models.Entities.Review>
+<h2>List of Reviews</h2>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Rating</th>
+            <th>Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var review in Model)
+        {
+            <tr>
+                <td>@review.ID</td>
+                <td>@review.Rating</td>
+                <td>@review.Comment</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return to Admin Panel</button>

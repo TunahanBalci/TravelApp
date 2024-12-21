@@ -1,0 +1,22 @@
+﻿@model IEnumerable<TravelApp.Models.Entities.User>
+<h2>List of Users</h2>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.ID</td>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return to Admin Panel</button>

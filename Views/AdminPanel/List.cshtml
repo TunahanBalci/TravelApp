@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "List Entities";
+}
+
+<div style="display:flex;justify-content:center;align-items:center">
+    <h2 style="font-weight:600">Admin Panel - Create New Entities</h2>
+</div>
+
+<div style="display:flex;flex:6;gap:40px;flex-direction:column;justify-content:space-around;align-items:center;margin-top:50px">
+    <div>
+        <button onclick="location.href='@Url.Action("ListUsers", "AdminPanel")'" class="btn btn-primary" style="width:320px;height:60px;border-radius:12px">List Users</button>
+    </div>
+    <div>
+        <button onclick="location.href='@Url.Action("ListCities", "AdminPanel")'" class="btn btn-primary" style="width:320px;height:60px;border-radius:12px">List Cities</button>
+    </div>
+    <div>
+        <button onclick="location.href='@Url.Action("ListAccommodations", "AdminPanel")'" class="btn btn-primary" style="width:320px;height:60px;border-radius:12px">List Accommodations</button>
+    </div>
+    <div>
+        <button onclick="location.href='@Url.Action("ListReviews", "AdminPanel")'" class="btn btn-primary" style="width:320px;height:60px;border-radius:12px">List Reviews</button>
+    </div>
+    <div>
+        <button onclick="location.href='@Url.Action("ListDestinations", "AdminPanel")'" class="btn btn-primary" style="width:320px;height:60px;border-radius:12px">List Destinations</button>
+    </div>
+    <div>
+        <button onclick="location.href='@Url.Action("ListActivities", "AdminPanel")'" class="btn btn-primary" style="width:320px;height:60px;border-radius:12px">List Activities</button>
+    </div>
+
+    <div style="margin-top: 50px">
+        <button type="button" onclick="location.href='@Url.Action("Index", "AdminPanel")'" class="btn btn-secondary" style="width:320px;height:60px;border-radius:12px">Return</button>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+﻿@model TravelApp.Models.Entities.User
+
+@{
+    ViewBag.Title = "Create User";
+}
+
+<h2>Create User</h2>
+
+<form asp-action="CreateUser" asp-controller="AdminPanel" method="post">
+    <div style="display: flex; flex-direction:column; gap: 40px;margin-top:50px;margin-bottom:40px">
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" name="Name" id="Name" class="form-control" value="@Model.Name" required />
+            @Html.ValidationMessageFor(model => model.Name, null, new { @class = "text-danger" })
+        </div>
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email" name="Email" id="Email" class="form-control" value="@Model.Email" required />
+            @Html.ValidationMessageFor(model => model.Email, null, new { @class = "text-danger" })
+        </div>
+        <div class="mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <input type="password" name="Password" id="Password" class="form-control" required minlength="8" />
+            @Html.ValidationMessageFor(model => model.Password, null, new { @class = "text-danger" })
+        </div>
+        <div class="mb-3">
+            <label for="Preferences" class="form-label">Preferences (Comma-separated)</label>
+            <input type="text" name="Preferences" id="Preferences" class="form-control" value="@string.Join(", ", Model.Preferences)" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Create</button>
+    <button type="button" onclick="location.href='@Url.Action("Index", "AdminPanel")'" class="btn btn-secondary">Return</button>
+</form>

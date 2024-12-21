@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Create Review";
+}
+
+<h2>Create Review</h2>
+
+<form asp-action="CreateReview" asp-controller="AdminPanel" method="post">
+    <div style="display: flex; flex-direction:column; gap: 40px;margin-top:50px;margin-bottom:40px">
+        <div>
+            <label for="Rating">Rating</label>
+            <input type="number" name="Rating" id="Rating" min="0" max="5" class="form-control" required />
+            @Html.ValidationMessage("Rating", "Rating cannot be null and must be between 0 and 5.")
+        </div>
+        <div>
+            <label for="Comment">Comment</label>
+            <textarea name="Comment" id="Comment" class="form-control"></textarea>
+        </div>
+        <div>
+            <label for="Entity_Type">Entity Type</label>
+            <select name="Entity_Type" id="Entity_Type" class="form-control">
+                <option value="Destination">Destination</option>
+                <option value="Accommodation">Accommodation</option>
+                <option value="Activity">Activity</option>
+            </select>
+        </div>
+        <div>
+            <label for="Entity_ID">Entity ID</label>
+            <input type="text" name="Entity_ID" id="Entity_ID" class="form-control" required />
+            @Html.ValidationMessage("Entity_ID", "Entity ID cannot be null.")
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Create</button>
+    <button type="button" onclick="location.href='@Url.Action("Index", "AdminPanel")'" class="btn btn-secondary">Return</button>
+</form>

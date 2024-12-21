@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\tunah\\source\\TravelApp\\wwwroot\\images\\destinations\\Ankara.png",
+      "PackagePath": "staticwebassets\\images\\destinations\\Ankara.png"
+    },
+    {
       "Id": "C:\\Users\\tunah\\source\\TravelApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

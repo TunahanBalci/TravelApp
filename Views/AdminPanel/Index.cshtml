@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Admin Panel";
+}
+
+<h1 style="display:flex;justify-content:center;align-items:center">Admin Panel</h1>
+
+<div style="display: flex; flex-direction: column; align-items: center;justify-content:center; gap: 20px; margin-top: 20vh;">
+    <button onclick="location.href='@Url.Action("Create", "AdminPanel")'"
+            class="btn btn-primary"
+            style="width: 200px; padding: 10px; font-size: 16px;">
+        Go to Create Page
+    </button>
+
+    <button onclick="location.href='@Url.Action("List", "AdminPanel")'"
+            class="btn btn-secondary"
+            style="width: 200px; padding: 10px; font-size: 16px;">
+        Go to List Page
+    </button>
+</div>

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<TravelApp.Models.Entities.Accommodation>
+<h2>List of Accommodations</h2>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var accommodation in Model)
+        {
+            <tr>
+                <td>@accommodation.ID</td>
+                <td>@accommodation.Name</td>
+                <td>@accommodation.Type</td>
+                <td>@accommodation.Location</td>
+                <td>@accommodation.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return to Admin Panel</button>

@@ -1,0 +1,65 @@
+﻿@model TravelApp.Models.Entities.Destination
+
+@{
+    ViewData["Title"] = "Testt";
+}
+
+<h1>View</h1>
+
+<div>
+    <h4>Destination</h4>
+    <img src="@Model.Image_Path" alt="Image of @Model.Name" style="max-width: 100%; height: auto; border-radius: 8px;" />
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+@*         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.User_ID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.User_ID)
+        </dd> *@
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Attractions)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Attractions)
+        </dd>
+    </dl>
+</div>
+<div>
+
+</div>
+<div style="display: flex; gap: 20px">
+    <a asp-action="Edit" asp-route-id="@Model?.ID" class="btn btn-primary">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+<!-- Return Button -->
+<button onclick="history.back()" class="btn btn-dark return-btn">Return</button>
+
+<style>
+    .return-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+</style>
+
