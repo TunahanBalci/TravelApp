@@ -1,0 +1,125 @@
+﻿@model TravelApp.Models.ViewModels.CreateReviewViewModel
+
+@{
+    ViewBag.Title = "Create Review";
+}
+
+<h2>Create Review</h2>
+
+<form asp-action="CreateReview" asp-controller="CreateReview" method="post">
+    <div class="container" style="margin-top:50px; margin-bottom:40px;">
+        <!-- Rating -->
+        <div class="form-group">
+            <label asp-for="Rating"></label>
+            <input asp-for="Rating" type="number" min="0" max="5" class="form-control" required />
+            @Html.ValidationMessageFor(model => model.Rating, "Rating must be between 0 and 5.", new { @class = "text-danger" })
+        </div>
+
+        <!-- Comment -->
+        <div class="form-group">
+            <label asp-for="Comment"></label>
+            <textarea asp-for="Comment" class="form-control"></textarea>
+            @Html.ValidationMessageFor(model => model.Comment, "Comment cannot exceed 1000 characters.", new { @class = "text-danger" })
+        </div>
+
+        <!-- User Selection -->
+        <div class="form-group">
+            <label asp-for="UserID">User</label>
+            <select asp-for="UserID" asp-items="Model.Users" class="form-control select2" required>
+                <option value="">-- Select a User --</option>
+                <!-- Options are populated from Model.Users -->
+            </select>
+            @Html.ValidationMessageFor(model => model.UserID, "User selection is required.", new { @class = "text-danger" })
+        </div>
+
+        <!-- Entity Type Selection -->
+        <div class="form-group">
+            <label asp-for="Entity_Type">Entity Type</label>
+            <select asp-for="Entity_Type" class="form-control select2" id="Entity_Type" required>
+                <option value="">-- Select Entity Type --</option>
+                <option value="Destination">Destination</option>
+                <option value="Accommodation">Accommodation</option>
+                <option value="Activity">Activity</option>
+            </select>
+            @Html.ValidationMessageFor(model => model.Entity_Type, "Entity Type is required.", new { @class = "text-danger" })
+        </div>
+
+        <!-- Entity ID Selection -->
+        <div class="form-group">
+            <label asp-for="Entity_ID">Entity</label>
+            <select asp-for="Entity_ID" class="form-control select2" id="Entity_ID" required disabled>
+                <option value="">-- Select an Entity --</option>
+                <!-- Options will be populated via AJAX based on Entity_Type -->
+            </select>
+            @Html.ValidationMessageFor(model => model.Entity_ID, "Entity selection is required.", new { @class = "text-danger" })
+        </div>
+
+        <!-- Submit and Return Buttons -->
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Create Review</button>
+            <button type="button" onclick="location.href='@Url.Action("Index", "AdminPanel")'" class="btn btn-secondary">Return to Admin Panel</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <!-- jQuery CDN (Ensure it's included for AJAX functionality) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Initialize Select2 on dropdowns
+            $('.select2').select2({
+                placeholder: '-- Select an option --',
+                allowClear: true,
+                width: '100%'
+            });
+
+            var entitySelect = $('#Entity_ID');
+
+            // Initially disable the Entity_ID dropdown
+            entitySelect.prop('disabled', true);
+
+            // Listen for changes in the Entity_Type dropdown
+            $('#Entity_Type').on('change', function() {
+                var selectedType = $(this).val();
+                entitySelect.empty(); // Clear previous options
+                entitySelect.append('<option value="">-- Select an Entity --</option>');
+
+                if (selectedType) {
+                    entitySelect.prop('disabled', false); // Enable the dropdown
+
+                    // Make AJAX call to fetch entities based on selected type
+                    $.ajax({
+                        url: '@Url.Action("GetEntities", "CreateReview")',
+                        type: 'GET',
+                        data: { entityType: selectedType },
+                        success: function(data) {
+                            // Populate the Entity_ID dropdown with received data
+                            $.each(data, function(index, item) {
+                                entitySelect.append('<option value="' + item.value + '">' + item.text + '</option>');
+                            });
+
+                            // Refresh Select2 to display new options
+                            entitySelect.trigger('change');
+                        },
+                        error: function() {
+                            alert('Error fetching entities. Please try again.');
+                            entitySelect.prop('disabled', true);
+                        }
+                    });
+                } else {
+                    entitySelect.prop('disabled', true); // Disable if no type is selected
+                }
+            });
+        });
+    </script>
+}

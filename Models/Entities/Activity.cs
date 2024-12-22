@@ -23,18 +23,22 @@ namespace TravelApp.Models.Entities
         [Required]
         public bool Requires_Reservation { get; set; } = false;
 
-        [Required]
-        public Destination Destination { get; set; }
+        public ICollection<Destination> Destinations { get; set; } = new List<Destination>();
 
         public ICollection<Review> Reviews { get; set; } = new List<Review>();
 
-        public double Average_Rating
+        public double? Average_Rating
         {
             get
             {
-                return Reviews != null && Reviews.Any()
-                    ? Reviews.Average(r => r.Rating)
-                    : 0.0;
+                if (Reviews != null && Reviews.Any(r => r.Rating.HasValue))
+                {
+                    return Reviews.Where(r => r.Rating.HasValue).Average(r => r.Rating.Value);
+                }
+                else
+                {
+                    return null; // Indicates no ratings available
+                }
             }
         }
 

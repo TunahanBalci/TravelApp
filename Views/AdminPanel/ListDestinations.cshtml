@@ -5,7 +5,13 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
+            <th>Description</th>
             <th>Location</th>
+            <th>City</th>
+            <th>Average Rating</th>
+            <th>Activities</th>
+            <th>Attractions</th>
+
         </tr>
     </thead>
     <tbody>
@@ -14,9 +20,41 @@
             <tr>
                 <td>@destination.ID</td>
                 <td>@destination.Name</td>
+                <td>@destination.Description</td>
                 <td>@destination.Location</td>
+                <td>@destination.City?.Name</td>
+                <td>
+                    @if (destination.Average_Rating.HasValue)
+                    {
+                        @destination.Average_Rating.Value.ToString("0.0")
+                    }
+                    else
+                    {
+                        <span>No ratings yet</span>
+                    }
+                </td>
+                <td>
+                    @if (destination.Activities != null && destination.Activities.Any())
+                    {
+                        @string.Join(", ", destination.Activities.Select(a => a.Name))
+                    }
+                    else
+                    {
+                        <span>No activities</span>
+                    }
+                </td>
+                <td>
+                    @if (destination.Attractions != null && destination.Attractions.Any())
+                    {
+                        @string.Join(", ", destination.Attractions.Select(a => a.Name))
+                    }
+                    else
+                    {
+                        <span>No attractions</span>
+                    }
+                </td>
             </tr>
         }
     </tbody>
 </table>
-<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return to Admin Panel</button>
+<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return</button>

@@ -52,19 +52,19 @@ namespace TravelApp.Migrations
                     b.ToTable("AccommodationAmenity");
                 });
 
-            modelBuilder.Entity("DestinationUser", b =>
+            modelBuilder.Entity("ActivityDestination", b =>
                 {
-                    b.Property<Guid>("Travel_HistoryID")
+                    b.Property<Guid>("ActivityID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("Visitor_HistoryID")
+                    b.Property<Guid>("DestinationID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("Travel_HistoryID", "Visitor_HistoryID");
+                    b.HasKey("ActivityID", "DestinationID");
 
-                    b.HasIndex("Visitor_HistoryID");
+                    b.HasIndex("DestinationID");
 
-                    b.ToTable("DestinationUser");
+                    b.ToTable("ActivityDestinations", (string)null);
                 });
 
             modelBuilder.Entity("TravelApp.Models.Entities.Accommodation", b =>
@@ -121,9 +121,6 @@ namespace TravelApp.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("DestinationID")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -144,8 +141,6 @@ namespace TravelApp.Migrations
 
                     b.HasIndex("CityID");
 
-                    b.HasIndex("DestinationID");
-
                     b.ToTable("Activities");
                 });
 
@@ -163,6 +158,27 @@ namespace TravelApp.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Amenities");
+                });
+
+            modelBuilder.Entity("TravelApp.Models.Entities.Attraction", b =>
+                {
+                    b.Property<Guid>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("DestinationID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("DestinationID");
+
+                    b.ToTable("Attractions");
                 });
 
             modelBuilder.Entity("TravelApp.Models.Entities.Booking", b =>
@@ -238,10 +254,6 @@ namespace TravelApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.PrimitiveCollection<string>("Attractions")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<Guid>("CityID")
                         .HasColumnType("uniqueidentifier");
 
@@ -264,11 +276,44 @@ namespace TravelApp.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<Guid?>("UserID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("UserID1")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("ID");
 
                     b.HasIndex("CityID");
 
+                    b.HasIndex("UserID");
+
+                    b.HasIndex("UserID1");
+
                     b.ToTable("Destinations");
+                });
+
+            modelBuilder.Entity("TravelApp.Models.Entities.Preference", b =>
+                {
+                    b.Property<Guid>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("UserID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("User_ID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("Preferences");
                 });
 
             modelBuilder.Entity("TravelApp.Models.Entities.Review", b =>
@@ -289,13 +334,6 @@ namespace TravelApp.Migrations
 
                     b.Property<Guid?>("DestinationID")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("Entity_ID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Entity_Type")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Rating")
                         .HasColumnType("int");
@@ -337,35 +375,12 @@ namespace TravelApp.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.PrimitiveCollection<string>("Preferences")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("ID");
 
                     b.HasIndex("Email")
                         .IsUnique();
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("TravelApp.Models.Entities.User_Destination", b =>
-                {
-                    b.Property<Guid>("User_ID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("Destination_ID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool>("Favorite")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("Visited")
-                        .HasColumnType("bit");
-
-                    b.HasKey("User_ID", "Destination_ID");
-
-                    b.ToTable("Users_Destination");
                 });
 
             modelBuilder.Entity("TravelApp.Models.Entities.User_Travel_History", b =>
@@ -414,17 +429,17 @@ namespace TravelApp.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("DestinationUser", b =>
+            modelBuilder.Entity("ActivityDestination", b =>
                 {
-                    b.HasOne("TravelApp.Models.Entities.Destination", null)
+                    b.HasOne("TravelApp.Models.Entities.Activity", null)
                         .WithMany()
-                        .HasForeignKey("Travel_HistoryID")
+                        .HasForeignKey("ActivityID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TravelApp.Models.Entities.User", null)
+                    b.HasOne("TravelApp.Models.Entities.Destination", null)
                         .WithMany()
-                        .HasForeignKey("Visitor_HistoryID")
+                        .HasForeignKey("DestinationID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -449,9 +464,12 @@ namespace TravelApp.Migrations
                     b.HasOne("TravelApp.Models.Entities.City", null)
                         .WithMany("Activities")
                         .HasForeignKey("CityID");
+                });
 
+            modelBuilder.Entity("TravelApp.Models.Entities.Attraction", b =>
+                {
                     b.HasOne("TravelApp.Models.Entities.Destination", "Destination")
-                        .WithMany("Activities")
+                        .WithMany("Attractions")
                         .HasForeignKey("DestinationID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -486,28 +504,52 @@ namespace TravelApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("TravelApp.Models.Entities.User", null)
+                        .WithMany("Favorited")
+                        .HasForeignKey("UserID");
+
+                    b.HasOne("TravelApp.Models.Entities.User", null)
+                        .WithMany("Visited")
+                        .HasForeignKey("UserID1");
+
                     b.Navigation("City");
+                });
+
+            modelBuilder.Entity("TravelApp.Models.Entities.Preference", b =>
+                {
+                    b.HasOne("TravelApp.Models.Entities.User", null)
+                        .WithMany("Preferences")
+                        .HasForeignKey("UserID");
                 });
 
             modelBuilder.Entity("TravelApp.Models.Entities.Review", b =>
                 {
-                    b.HasOne("TravelApp.Models.Entities.Accommodation", null)
+                    b.HasOne("TravelApp.Models.Entities.Accommodation", "Accommodation")
                         .WithMany("Reviews")
-                        .HasForeignKey("AccommodationID");
+                        .HasForeignKey("AccommodationID")
+                        .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("TravelApp.Models.Entities.Activity", null)
+                    b.HasOne("TravelApp.Models.Entities.Activity", "Activity")
                         .WithMany("Reviews")
-                        .HasForeignKey("ActivityID");
+                        .HasForeignKey("ActivityID")
+                        .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("TravelApp.Models.Entities.Destination", null)
+                    b.HasOne("TravelApp.Models.Entities.Destination", "Destination")
                         .WithMany("Reviews")
-                        .HasForeignKey("DestinationID");
+                        .HasForeignKey("DestinationID")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("TravelApp.Models.Entities.User", "User")
                         .WithMany("Review_History")
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Accommodation");
+
+                    b.Navigation("Activity");
+
+                    b.Navigation("Destination");
 
                     b.Navigation("User");
                 });
@@ -535,7 +577,7 @@ namespace TravelApp.Migrations
 
             modelBuilder.Entity("TravelApp.Models.Entities.Destination", b =>
                 {
-                    b.Navigation("Activities");
+                    b.Navigation("Attractions");
 
                     b.Navigation("Reviews");
                 });
@@ -544,7 +586,13 @@ namespace TravelApp.Migrations
                 {
                     b.Navigation("Booking_History");
 
+                    b.Navigation("Favorited");
+
+                    b.Navigation("Preferences");
+
                     b.Navigation("Review_History");
+
+                    b.Navigation("Visited");
                 });
 #pragma warning restore 612, 618
         }

@@ -6,6 +6,12 @@
             <th>ID</th>
             <th>Name</th>
             <th>Location</th>
+            <th>Climate</th>
+            <th>Terrain</th>
+            <th>Cost Of Living</th>
+            <th>Accommodations</th>
+            <th>Activities</th>
+            <th>Destinations</th>
         </tr>
     </thead>
     <tbody>
@@ -15,8 +21,41 @@
                 <td>@city.ID</td>
                 <td>@city.Name</td>
                 <td>@city.Location</td>
+                <td>@city.Climate</td>
+                <td>@city.Terrain</td>
+                <td>@city.Cost_Of_Living</td>
+                <td>
+                    @if (city.Accommodations != null && city.Accommodations.Any())
+                    {
+                        @string.Join(", ", city.Accommodations.Select(a => a.Name))
+                    }
+                    else
+                    {
+                        <span>No accommodations</span>
+                    }
+                </td>
+                <td>
+                    @if (city.Activities != null && city.Activities.Any())
+                    {
+                        @string.Join(", ", city.Activities.Select(a => a.Name))
+                    }
+                    else
+                    {
+                        <span>No activities</span>
+                    }
+                </td>
+                <td>
+                    @if (city.Destinations != null && city.Destinations.Any())
+                    {
+                        @string.Join(", ", city.Destinations.Select(a => a.Name))
+                    }
+                    else
+                    {
+                        <span>No destinations</span>
+                    }
+                </td>
             </tr>
         }
     </tbody>
 </table>
-<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return to Admin Panel</button>
+<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return</button>

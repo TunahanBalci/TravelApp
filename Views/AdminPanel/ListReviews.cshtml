@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<TravelApp.Models.Entities.Review>
+
 <h2>List of Reviews</h2>
 <table class="table table-bordered table-striped">
     <thead>
@@ -6,6 +7,10 @@
             <th>ID</th>
             <th>Rating</th>
             <th>Comment</th>
+            <th>User</th>
+            <th>User ID</th>
+            <th>Entity</th>
+            <th>Entity ID</th>
         </tr>
     </thead>
     <tbody>
@@ -13,10 +18,66 @@
         {
             <tr>
                 <td>@review.ID</td>
-                <td>@review.Rating</td>
-                <td>@review.Comment</td>
+                <td>
+                    @if (@review.Rating.HasValue)
+                    {
+                        @review.Rating
+                    }
+                    else
+                    {
+                        <span>No rating</span>
+                    }
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(review.Comment))
+                    {
+                        @review.Comment
+                    }
+                    else
+                    {
+                        <span>No comment</span>
+                    }
+                </td>
+                <td>@review.User.Name</td>
+                <td>@review.User.ID</td>
+                <td>
+                    @if (review.Destination != null)
+                    {
+                        <span>(Destination)</span> @review.Destination.Name
+                    }
+                    else if (review.Accommodation != null)
+                    {
+                        <span>(Accommodation)</span> @review.Accommodation.Name
+                    }
+                    else if (review.Activity != null)
+                    {
+                        <span>(Activity)</span> @review.Activity.Name
+                    }
+                    else
+                    {
+                        <span>No associated entity</span>
+                    }
+                </td>
+                <td>
+                    @if (review.Destination != null)
+                    {
+                        @review.Destination.ID
+                    }
+                    else if (review.Accommodation != null)
+                    {
+                        @review.Accommodation.ID
+                    }
+                    else if (review.Activity != null)
+                    {
+                        @review.Activity.ID
+                    }
+                    else
+                    {
+                        <span>Error - No ID</span>
+                    }
+                </td>
             </tr>
         }
     </tbody>
 </table>
-<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return to Admin Panel</button>
+<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return</button>

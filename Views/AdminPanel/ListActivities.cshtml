@@ -7,6 +7,12 @@
             <th>Name</th>
             <th>Type</th>
             <th>Date</th>
+            <th>Price</th>
+            <th>Requires Reservation?</th>
+            <th>Average Rating</th>
+            <th>Destinations</th>
+            <th>Accommodations</th>
+            
         </tr>
     </thead>
     <tbody>
@@ -17,8 +23,49 @@
                 <td>@activity.Name</td>
                 <td>@activity.Type</td>
                 <td>@activity.Date</td>
+                <td>
+                    @if (activity.Price == 0)
+                    {
+                        <span>Free</span>
+                    }
+                    else
+                    {
+                        @activity.Price
+                    }
+                </td>
+                <td>@activity.Requires_Reservation</td>
+                <td>
+                    @if (activity.Average_Rating.HasValue)
+                    {
+                        @activity.Average_Rating.Value.ToString("0.0")
+                    }
+                    else
+                    {
+                        <span>No ratings yet</span>
+                    }
+                </td>
+                <td>
+                    @if (activity.Destinations != null && activity.Destinations.Any())
+                    {
+                        @string.Join(", ", activity.Destinations.Select(a => a.Name))
+                    }
+                    else
+                    {
+                        <span>No destinations available</span>
+                    }
+                </td>
+                <td>
+                    @if (activity.Accommodations != null && activity.Accommodations.Any())
+                    {
+                        @string.Join(", ", activity.Accommodations.Select(a => a.Name))
+                    }
+                    else
+                    {
+                        <span>No accommodations available</span>
+                    }
+                </td>
             </tr>
         }
     </tbody>
 </table>
-<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return to Admin Panel</button>
+<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return</button>

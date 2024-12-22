@@ -2,16 +2,21 @@
 using TravelApp.Data;
 using TravelApp.Models.Entities;
 using Microsoft.EntityFrameworkCore;
+using TravelApp.Models.ViewModels;
+using Microsoft.CodeAnalysis.Elfie.Diagnostics;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace TravelApp.Controllers
 {
     public class AdminPanelController : Controller
     {
         private readonly AppDBContext _context;
+        private readonly ILogger<AdminPanelController> _logger;
 
-        public AdminPanelController(AppDBContext context)
+        public AdminPanelController(AppDBContext context, ILogger<AdminPanelController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: Entity/Create
@@ -81,213 +86,15 @@ namespace TravelApp.Controllers
             return View();
         }
 
-        public IActionResult CreateUser()
-        {
-            // Initialize the User model and pass it to the view
-            return View(new User());
-        }
-
-        [HttpPost]
-        public IActionResult CreateUser(User user)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(user); // Return the same view with validation errors
-            }
-
-            try
-            {
-                user.ID = Guid.NewGuid(); // Generate a new unique ID for the user
-                _context.Users.Add(user);
-                _context.SaveChanges();
-                return RedirectToAction("Create"); // Redirect to the main Create page
-            }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError("", $"Error: {ex.Message}");
-                return View(user);
-            }
-        }
-
-
-        public IActionResult CreateDestination()
-        {
-            // Ensure the list of cities is fetched and passed to the view
-            var cities = _context.Cities.ToList();
-
-            // Check if cities are null or empty
-            if (cities == null || !cities.Any())
-            {
-                // Add an error message if no cities are found
-                ModelState.AddModelError("", "No cities available. Please create a city first.");
-            }
-
-            ViewBag.Cities = cities;
-
-            // Pass a new Destination model to the view
-            return View(new Destination());
-        }
-
-
-        [HttpPost]
-        public IActionResult CreateDestination(Destination destination, string Attractions, Guid City)
-        {
-            if (!ModelState.IsValid)
-            {
-                // If the model is invalid, reload the cities for the dropdown and return the view
-                ViewBag.Cities = _context.Cities.ToList();
-                return View(destination);
-            }
-
-            try
-            {
-                // Handle Attractions as a comma-separated list
-                if (!string.IsNullOrWhiteSpace(Attractions))
-                {
-                    destination.Attractions = Attractions.Split(',').Select(a => a.Trim()).ToList();
-                }
-
-                // Assign the selected city using the City ID
-                destination.City = _context.Cities.FirstOrDefault(c => c.ID == City);
-
-                // Generate a new GUID for the destination
-                destination.ID = Guid.NewGuid();
-
-                // Save the destination to the database
-                _context.Destinations.Add(destination);
-                _context.SaveChanges();
-
-                // Redirect to the main Create page
-                return RedirectToAction("Create");
-            }
-            catch (Exception ex)
-            {
-                // Handle any errors during saving
-                ModelState.AddModelError("", $"Error: {ex.Message}");
-
-                // Reload the cities for the dropdown
-                ViewBag.Cities = _context.Cities.ToList();
-
-                // Return the view with the error message
-                return View(destination);
-            }
-        }
-
-        public IActionResult CreateReview()
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult CreateReview(Review review)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(review);
-            }
-
-            try
-            {
-                review.ID = Guid.NewGuid(); // Generate a unique ID for the review
-                _context.Reviews.Add(review);
-                _context.SaveChanges();
-
-                return RedirectToAction("Create"); // Redirect to the main Create page
-            }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError("", $"Error: {ex.Message}");
-                return View(review);
-            }
-        }
-        public IActionResult CreateAccommodation()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult CreateAccommodation(Accommodation accommodation)
-        {
-            Console.WriteLine("CreateAccommodation POST method invoked.");
-            if (!ModelState.IsValid)
-            {
-                Console.WriteLine("ModelState is invalid.");
-                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-                {
-                    Console.WriteLine(error.ErrorMessage);
-                }
-                return View(accommodation);
-            }
-
-            try
-            {
-                Console.WriteLine("Saving accommodation to the database.");
-                accommodation.ID = Guid.NewGuid();
-                _context.Accommodations.Add(accommodation);
-                _context.SaveChanges();
-                return RedirectToAction("Index", "AdminPanel");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Exception: {ex.Message}");
-                ModelState.AddModelError("", $"Error: {ex.Message}");
-                return View(accommodation);
-            }
-        }
 
 
 
-        public IActionResult CreateActivity()
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult CreateActivity(Activity activity)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(activity);
-            }
 
-            try
-            {
-                activity.ID = Guid.NewGuid(); // Generate a unique ID for the activity
-                _context.Activities.Add(activity);
-                _context.SaveChanges();
 
-                return RedirectToAction("Create"); // Redirect to the main Create page
-            }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError("", $"Error: {ex.Message}");
-                return View(activity);
-            }
-        }
-        public IActionResult CreateCity()
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult CreateCity(City city)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(city);
-            }
 
-            try
-            {
-                city.ID = Guid.NewGuid(); // Generate a unique ID for the city
-                _context.Cities.Add(city);
-                _context.SaveChanges();
 
-                return RedirectToAction("Create"); // Redirect to the main Create page
-            }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError("", $"Error: {ex.Message}");
-                return View(city);
-            }
-        }
+
+
         public IActionResult Index()
         {
             return View();
@@ -300,7 +107,13 @@ namespace TravelApp.Controllers
         }
         public async Task<IActionResult> ListReviews()
         {
-            var reviews = await _context.Reviews.Include(r => r.User).ToListAsync();
+            var reviews = await _context.Reviews
+                .Include(r => r.User)
+                .Include(r => r.Destination)
+                .Include(r => r.Accommodation)
+                .Include(r => r.Activity)
+                .ToListAsync();
+
             return View(reviews);
         }
         public async Task<IActionResult> ListDestinations()
@@ -310,9 +123,12 @@ namespace TravelApp.Controllers
         }
         public async Task<IActionResult> ListActivities()
         {
-            var activities = await _context.Activities.Include(a => a.Destination).ToListAsync();
+            var activities = await _context.Activities
+                .Include(a => a.Destinations) // Include multiple destinations for each activity
+                .ToListAsync();
             return View(activities);
         }
+
         public async Task<IActionResult> ListCities()
         {
             var cities = await _context.Cities.ToListAsync();
@@ -324,6 +140,27 @@ namespace TravelApp.Controllers
             return View(accommodations);
         }
 
+
+        public IActionResult Test()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Test(IFormCollection collection)
+        {
+
+
+            try
+            {
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
 
     }
 }

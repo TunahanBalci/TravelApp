@@ -27,9 +27,10 @@ namespace TravelApp.Models.Entities
 
         public ICollection<Review> Review_History { get; set; } = new List<Review>();
 
-        public ICollection<Destination> Travel_History { get; set; } = new List<Destination>();
+        public ICollection<Destination> Visited { get; set; } = new List<Destination>();
+        public ICollection<Destination> Favorited { get; set; } = new List<Destination>();
 
-        public ICollection<String> Preferences { get; set; } = new List<String>();
+        public ICollection<Preference> Preferences { get; set; } = new List<Preference>();
 
         public ICollection<Accommodation> Booking_History { get; set; } = new List<Accommodation>();
     }
@@ -46,20 +47,13 @@ namespace TravelApp.Models.Entities
         public DateTime Visit_Date { get; set; } = DateTime.Now; // Default now
 
     }
-
-    public class User_Destination
+    public class Preference
     {
-
+        [Key]
+        public Guid ID { get; set; }
         [Required]
         public Guid User_ID { get; set; }
-
         [Required]
-        public Guid Destination_ID { get; set; }
-
-        [Required]
-        public bool Favorite { get; set; } = false;
-
-        [Required]
-        public bool Visited { get; set; } = false;
+        public string Content { get; set; }
     }
 }

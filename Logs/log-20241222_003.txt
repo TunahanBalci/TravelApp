@@ -1,0 +1,28 @@
+2024-12-22 01:21:17.041 +03:00 [WRN] There are multiple relationships between 'Destination' and 'User' without configured foreign key properties. This will cause Entity Framework to create shadow properties on 'Destination' with names dependent on the discovery order. Consider configuring the foreign key properties using the [ForeignKey] attribute or in 'OnModelCreating'.
+2024-12-22 01:21:17.154 +03:00 [WRN] The foreign key property 'Destination.UserID1' was created in shadow state because a conflicting property with the simple name 'UserID' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2024-12-22 01:21:17.185 +03:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Accommodation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-22 01:21:17.189 +03:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Activity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-22 01:21:17.192 +03:00 [WRN] No store type was specified for the decimal property 'Cost_Of_Living' on entity type 'City'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-22 01:21:37.182 +03:00 [INF] CreateActivity POST method invoked.
+2024-12-22 01:21:37.477 +03:00 [INF] Activity saved successfully.
+2024-12-22 01:22:12.584 +03:00 [INF] CreateAccommodation POST method invoked.
+2024-12-22 01:22:12.626 +03:00 [INF] Accommodation saved successfully.
+[2024-12-22 01:24:27 WRN] There are multiple relationships between 'Destination' and 'User' without configured foreign key properties. This will cause Entity Framework to create shadow properties on 'Destination' with names dependent on the discovery order. Consider configuring the foreign key properties using the [ForeignKey] attribute or in 'OnModelCreating'.
+[2024-12-22 01:24:27 WRN] The foreign key property 'Destination.UserID1' was created in shadow state because a conflicting property with the simple name 'UserID' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2024-12-22 01:24:27 WRN] No store type was specified for the decimal property 'Price' on entity type 'Accommodation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2024-12-22 01:24:27 WRN] No store type was specified for the decimal property 'Price' on entity type 'Activity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2024-12-22 01:24:27 WRN] No store type was specified for the decimal property 'Cost_Of_Living' on entity type 'City'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+[2024-12-22 01:24:46 INF] CreateAccommodation POST method invoked.
+[2024-12-22 01:24:46 INF] Accommodation saved successfully.
+[2024-12-22 01:24:54 INF] CreateDestination POST method invoked.
+[2024-12-22 01:24:54 INF] Processing single attraction...
+[2024-12-22 01:24:54 INF] Attraction added: dfgdfgdfg
+[2024-12-22 01:24:54 INF] Retrieving selected activities...
+[2024-12-22 01:24:54 INF] Processing activity ID: 85c96e58-eb65-40ef-9a85-7b555772908d, Name: asdasdasd
+[2024-12-22 01:24:54 INF] Adding destination to activity ID: 85c96e58-eb65-40ef-9a85-7b555772908d
+[2024-12-22 01:24:54 INF] Processing activity ID: fa4af9ad-76e5-4ae6-89f5-a1f12be72657, Name: Seine River Cruise
+[2024-12-22 01:24:54 INF] Adding destination to activity ID: fa4af9ad-76e5-4ae6-89f5-a1f12be72657
+[2024-12-22 01:24:54 INF] Adding destination to database...
+[2024-12-22 01:24:54 INF] Destination saved successfully!
+[2024-12-22 01:25:03 INF] CreateActivity POST method invoked.
+[2024-12-22 01:25:03 INF] Activity saved successfully.

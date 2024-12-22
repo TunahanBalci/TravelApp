@@ -6,6 +6,10 @@
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
+            <th>Password</th>
+            <th>Preferences</th>
+            <th>Visited Destinations</th>
+            <th>Favorite Destinations</th>
         </tr>
     </thead>
     <tbody>
@@ -15,8 +19,39 @@
                 <td>@user.ID</td>
                 <td>@user.Name</td>
                 <td>@user.Email</td>
+                <td>@user.Password</td>
+                <td>
+                    @if (user.Preferences != null && user.Preferences.Any())
+                    {
+                        @string.Join(", ", user.Preferences.Select(a => a.Content))
+                    }
+                    else
+                    {
+                        <span>No preferences</span>
+                    }
+                </td>
+                <td>
+                    @if (user.Visited != null && user.Visited.Any())
+                    {
+                        @string.Join(", ", user.Visited.Select(a => a.Name))
+                    }
+                    else
+                    {
+                        <span>No visits</span>
+                    }
+                </td>
+                <td>
+                    @if (user.Favorited != null && user.Favorited.Any())
+                    {
+                        @string.Join(", ", user.Favorited.Select(a => a.Name))
+                    }
+                    else
+                    {
+                        <span>No favorites</span>
+                    }
+                </td>
             </tr>
         }
     </tbody>
 </table>
-<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return to Admin Panel</button>
+<button class="btn btn-secondary" onclick="location.href='@Url.Action("List", "AdminPanel")'">Return</button>

@@ -1,0 +1,65 @@
+﻿@model TravelApp.Models.ViewModels.CreateAccommodationViewModel
+
+@{
+    ViewBag.Title = "Create Accommodation";
+}
+
+<h2>Create Accommodation</h2>
+
+<form asp-action="CreateAccommodation" asp-controller="CreateAccommodation" method="post">
+    <div style="display: flex; flex-direction: column; gap: 40px; margin-top: 50px; margin-bottom: 40px">
+        <!-- Name Field -->
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            @Html.ValidationMessageFor(model => model.Name, null, new { @class = "text-danger" })
+        </div>
+
+        <!-- Type Field -->
+        <div class="form-group">
+            <label asp-for="Type"></label>
+            <input asp-for="Type" class="form-control" />
+            @Html.ValidationMessageFor(model => model.Type, null, new { @class = "text-danger" })
+        </div>
+
+        <!-- Location Field -->
+        <div class="form-group">
+            <label asp-for="Location"></label>
+            <input asp-for="Location" class="form-control" />
+            @Html.ValidationMessageFor(model => model.Location, null, new { @class = "text-danger" })
+        </div>
+
+        <!-- Price Field -->
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" type="number" step="0.01" class="form-control" />
+            @Html.ValidationMessageFor(model => model.Price, null, new { @class = "text-danger" })
+        </div>
+
+        <!-- Availability Checkbox -->
+        <div class="form-group form-check">
+            <input asp-for="Availability" class="form-check-input" />
+            <label asp-for="Availability" class="form-check-label"></label>
+            @Html.ValidationMessageFor(model => model.Availability, null, new { @class = "text-danger" })
+        </div>
+
+        <!-- City Dropdown -->
+        <div class="form-group">
+            <label asp-for="CityID"></label>
+            <select asp-for="CityID"
+                    asp-items="@(new SelectList(Model.Cities, "ID", "Name"))"
+                    class="form-control">
+                <option value="">Select a city</option>
+            </select>
+            @Html.ValidationMessageFor(model => model.CityID, null, new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <button type="submit" class="btn btn-success">Create</button>
+    <button type="button" onclick="location.href='@Url.Action("Index", "AdminPanel")'" class="btn btn-secondary">Return</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
